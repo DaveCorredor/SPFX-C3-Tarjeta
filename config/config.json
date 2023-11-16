@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "tarjeta-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tarjeta/TarjetaWebPart.js",
+          "manifest": "./src/webparts/tarjeta/TarjetaWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TarjetaWebPartStrings": "lib/webparts/tarjeta/loc/{locale}.js"
+  }
+}
