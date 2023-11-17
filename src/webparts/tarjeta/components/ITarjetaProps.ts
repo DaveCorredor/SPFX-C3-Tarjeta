@@ -1,3 +1,6 @@
 export interface ITarjetaProps {
-  description: string;
+  urlImagen: string;
+  titulo: string;
+  colorFondo: string;
+  texto: string;
 }

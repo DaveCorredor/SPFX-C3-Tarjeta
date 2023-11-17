@@ -12,7 +12,10 @@ import Tarjeta from './components/Tarjeta';
 import { ITarjetaProps } from './components/ITarjetaProps';
 
 export interface ITarjetaWebPartProps {
-  description: string;
+  urlImagen: string;
+  titulo: string;
+  colorFondo: string;
+  texto: string;
 }
 
 export default class TarjetaWebPart extends BaseClientSideWebPart<ITarjetaWebPartProps> {
@@ -21,7 +24,10 @@ export default class TarjetaWebPart extends BaseClientSideWebPart<ITarjetaWebPar
     const element: React.ReactElement<ITarjetaProps> = React.createElement(
       Tarjeta,
       {
-        description: this.properties.description
+        urlImagen: this.properties.urlImagen,
+        titulo: this.properties.titulo,
+        colorFondo: this.properties.colorFondo,
+        texto: this.properties.texto,
       }
     );
 
@@ -47,9 +53,19 @@ export default class TarjetaWebPart extends BaseClientSideWebPart<ITarjetaWebPar
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
-                })
+                PropertyPaneTextField('urlImagen', {
+                  label: strings.DescriptionFieldurlImage
+                }),
+                PropertyPaneTextField('titulo', {
+                  label: strings.DescriptionFieldtitulo
+                }),
+                PropertyPaneTextField('colorFondo', {
+                  label: strings.DescriptionFieldcolorFondo
+                }),
+                PropertyPaneTextField('texto', {
+                  label: strings.DescriptionFieldtexto,
+                  multiline: true
+                }),
               ]
             }
           ]
