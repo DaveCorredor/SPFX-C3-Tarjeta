@@ -3,7 +3,6 @@ declare interface ITarjetaWebPartStrings {
   BasicGroupName: string;
   DescriptionFieldurlImage: string;
   DescriptionFieldtitulo: string;
-  DescriptionFieldcolorFondo: string;
   DescriptionFieldtexto: string;
 }
 

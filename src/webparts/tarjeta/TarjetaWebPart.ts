@@ -14,7 +14,6 @@ import { ITarjetaProps } from './components/ITarjetaProps';
 export interface ITarjetaWebPartProps {
   urlImagen: string;
   titulo: string;
-  colorFondo: string;
   texto: string;
 }
 
@@ -26,7 +25,6 @@ export default class TarjetaWebPart extends BaseClientSideWebPart<ITarjetaWebPar
       {
         urlImagen: this.properties.urlImagen,
         titulo: this.properties.titulo,
-        colorFondo: this.properties.colorFondo,
         texto: this.properties.texto,
       }
     );
@@ -58,9 +56,6 @@ export default class TarjetaWebPart extends BaseClientSideWebPart<ITarjetaWebPar
                 }),
                 PropertyPaneTextField('titulo', {
                   label: strings.DescriptionFieldtitulo
-                }),
-                PropertyPaneTextField('colorFondo', {
-                  label: strings.DescriptionFieldcolorFondo
                 }),
                 PropertyPaneTextField('texto', {
                   label: strings.DescriptionFieldtexto,

@@ -4,7 +4,6 @@ define([], function() {
     "BasicGroupName": "Configuraciones",
     "DescriptionFieldurlImage":"Url de Imagen",
     "DescriptionFieldtitulo": "Título",
-    "DescriptionFieldcolorFondo": "Color de fondo",
     "DescriptionFieldtexto":"Texto",
   }
 });
