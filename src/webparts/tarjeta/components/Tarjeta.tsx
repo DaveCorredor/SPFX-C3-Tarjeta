@@ -8,15 +8,15 @@ export default class Tarjeta extends React.Component<ITarjetaProps, {}> {
     return (
       <div className={styles.container}>
         <div className={styles.sectionImg}>
-              <img src={this.props.urlImagen} alt="Imagen" />
-            </div>
-            <div className={styles.sectionText}>
-              <div className={styles.sectionDescription}>
-                <h1>{this.props.titulo}</h1>
-                <p>{this.props.texto}</p>
-              </div>
-            </div>
+          <img src={this.props.urlImagen} alt="Imagen" />
+        </div>
+        <div className={styles.sectionText}>
+          <div className={styles.sectionDescription}>
+            <h1>{this.props.titulo}</h1>
+            <p>{this.props.texto}</p>
           </div>
+        </div>
+      </div>
     );
   }
 }
