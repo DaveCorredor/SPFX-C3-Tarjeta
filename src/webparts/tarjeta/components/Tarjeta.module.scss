@@ -11,7 +11,8 @@
 }
 
 .sectionText {
-  flex: 1;
+  //flex: 1;
+  flex: 0 1 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +21,8 @@
 }
 
 .sectionImg {
-  flex: 1;
+  // flex: 1;
+  flex: 0 1 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;

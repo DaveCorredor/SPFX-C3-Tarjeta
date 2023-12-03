@@ -4,6 +4,7 @@ define([], function() {
     "BasicGroupName": "Configuraciones",
     "DescriptionFieldurlImage":"Url de Imagen",
     "DescriptionFieldtitulo": "Título",
+    "DescripcionPlaceholderTitulo" : "Max 20 caracteres",
     "DescriptionFieldtexto":"Texto",
   }
 });

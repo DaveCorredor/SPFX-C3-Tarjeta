@@ -55,7 +55,9 @@ export default class TarjetaWebPart extends BaseClientSideWebPart<ITarjetaWebPar
                   label: strings.DescriptionFieldurlImage
                 }),
                 PropertyPaneTextField('titulo', {
-                  label: strings.DescriptionFieldtitulo
+                  label: strings.DescriptionFieldtitulo,
+                  maxLength: 20,
+                  placeholder: strings.DescripcionPlaceholderTitulo
                 }),
                 PropertyPaneTextField('texto', {
                   label: strings.DescriptionFieldtexto,
